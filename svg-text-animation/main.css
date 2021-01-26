@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(32, 35, 48);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo path:nth-child(1) {
+    stroke-dasharray: 572;
+    stroke-dashoffset: 572;
+}
+#logo path:nth-child(2) {
+    stroke-dasharray: 464;
+    stroke-dashoffset: 464;
+}
+#logo path:nth-child(3) {
+    stroke-dasharray: 494;
+    stroke-dashoffset: 494
+}
+#logo path:nth-child(4) {
+    stroke-dasharray: 227;
+    stroke-dashoffset: 227;
+}
+#logo path:nth-child(5) {
+    stroke-dasharray: 636;
+    stroke-dashoffset: 636;
+}
+#logo path:nth-child(6) {
+    stroke-dasharray: 605;
+    stroke-dashoffset: 605;
+}
+#logo path:nth-child(7) {
+    stroke-dasharray: 464;
+    stroke-dashoffset: 464;
+}
+#logo path:nth-child(8) {
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+}
+
+/* Path 0 is 571.5772094726562 width
+main.js:4 Path 1 is 463.9679870605469 width
+main.js:4 Path 2 is 493.9131164550781 width
+main.js:4 Path 3 is 226.94400024414062 width
+main.js:4 Path 4 is 635.7130126953125 width
+main.js:4 Path 5 is 604.4829711914062 width
+main.js:4 Path 6 is 463.96795654296875 width */
