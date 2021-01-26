@@ -13,43 +13,63 @@ body {
     align-items: center;
 }
 
+#logo {
+    animation: fill 1s ease forwards 2s;   
+}
+
 #logo path:nth-child(1) {
     stroke-dasharray: 572;
     stroke-dashoffset: 572;
+    animation: draw 2s ease forwards;
 }
 #logo path:nth-child(2) {
     stroke-dasharray: 464;
     stroke-dashoffset: 464;
+    animation: draw 2s ease forwards 0.1s;
 }
 #logo path:nth-child(3) {
     stroke-dasharray: 494;
-    stroke-dashoffset: 494
+    stroke-dashoffset: 494;
+    animation: draw 2s ease forwards 0.2s;
 }
 #logo path:nth-child(4) {
     stroke-dasharray: 227;
     stroke-dashoffset: 227;
+    animation: draw 2s ease forwards 0.3s;
 }
 #logo path:nth-child(5) {
     stroke-dasharray: 636;
     stroke-dashoffset: 636;
+    animation: draw 2s ease forwards 0.3s;
 }
 #logo path:nth-child(6) {
     stroke-dasharray: 605;
     stroke-dashoffset: 605;
+    animation: draw 2s ease forwards 0.2s;
 }
 #logo path:nth-child(7) {
     stroke-dasharray: 464;
     stroke-dashoffset: 464;
+    animation: draw 2s ease forwards 0.1s;
 }
 #logo path:nth-child(8) {
     stroke-dasharray: 550;
     stroke-dashoffset: 550;
+    animation: draw 2s ease forwards;
 }
 
-/* Path 0 is 571.5772094726562 width
-main.js:4 Path 1 is 463.9679870605469 width
-main.js:4 Path 2 is 493.9131164550781 width
-main.js:4 Path 3 is 226.94400024414062 width
-main.js:4 Path 4 is 635.7130126953125 width
-main.js:4 Path 5 is 604.4829711914062 width
-main.js:4 Path 6 is 463.96795654296875 width */
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill {
+    from {
+        fill: transparent;
+    }
+
+    to {
+        fill: white;
+    }
+}
