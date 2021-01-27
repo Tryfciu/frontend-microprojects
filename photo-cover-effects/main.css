@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images-container {
+    width: 100%;
+    height: 50%;
+    margin: 0px 3%;
+    position: relative;
+}
+
+.images-container > img {
+    height: 100%;
+    width: 100%;
+}
+
+#alternative-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 1.3s ease;
+}
+
+#alternative-image:hover {
+    opacity: 1;
+}
+
+#fade::after {
+    content: 'snow trees';
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 1.3s ease;
+}
+
+#fade:hover::after {
+    opacity: 0.5;
+}
